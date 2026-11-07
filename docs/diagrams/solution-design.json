@@ -1,0 +1,1179 @@
+{
+  "version": "0",
+  "fileName": "Metric Compass - Solution Design",
+  "diagramDescription": "Strategic evaluation engine for auditing, scoring and roadmapping performance metrics. Conceptual portfolio solution design using a neutral project name; not an as-built company deployment inventory. Every component description identifies its evidence basis. All detailed models, sources, rules, interfaces and AI capabilities require project validation. AIT analyser is interpreted as AIP Analyst. Generic custom cards represent tools whose native type was not present in the supplied example. No live resource RIDs. Connections show data, invocation, navigation or governance relationships as labelled.",
+  "nodes": [
+    {
+      "id": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "01 | Data and Build Orchestration",
+        "color": "rgba(152,184,193,0.3)",
+        "tags": [],
+        "width": 500,
+        "height": 1790,
+        "dataSetters": {}
+      },
+      "type": "customGroup",
+      "width": 500,
+      "height": 1790,
+      "zIndex": 0,
+      "measured": {
+        "width": 500,
+        "height": 1790
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.group.d2128d75-633a-4bc1-b2ed-eb6f9ca9fe5d",
+      "position": {
+        "x": 580,
+        "y": 0
+      },
+      "data": {
+        "name": "02 | Ontology and Controlled Changes",
+        "color": "rgba(232,197,163,0.3)",
+        "tags": [],
+        "width": 500,
+        "height": 1790,
+        "dataSetters": {}
+      },
+      "type": "customGroup",
+      "width": 500,
+      "height": 1790,
+      "zIndex": 0,
+      "measured": {
+        "width": 500,
+        "height": 1790
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.group.d68c6cac-fcc9-4d2f-8aa1-e0fba55f4659",
+      "position": {
+        "x": 1160,
+        "y": 0
+      },
+      "data": {
+        "name": "03 | Applications and Reporting",
+        "color": "rgba(98,217,107,0.3)",
+        "tags": [],
+        "width": 500,
+        "height": 1790,
+        "dataSetters": {}
+      },
+      "type": "customGroup",
+      "width": 500,
+      "height": 1790,
+      "zIndex": 0,
+      "measured": {
+        "width": 500,
+        "height": 1790
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.group.ec2a1204-faaa-482b-965e-fc6f046eca4d",
+      "position": {
+        "x": 1740,
+        "y": 0
+      },
+      "data": {
+        "name": "04 | AIP and Human Review",
+        "color": "rgba(180,150,220,0.3)",
+        "tags": [],
+        "width": 500,
+        "height": 1790,
+        "dataSetters": {}
+      },
+      "type": "customGroup",
+      "width": 500,
+      "height": 1790,
+      "zIndex": 0,
+      "measured": {
+        "width": 500,
+        "height": 1790
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.group.a781cdf7-7291-49ae-990c-79c189152cda",
+      "position": {
+        "x": 2320,
+        "y": 0
+      },
+      "data": {
+        "name": "05 | Workflow and Operations",
+        "color": "rgba(130,165,230,0.3)",
+        "tags": [],
+        "width": 500,
+        "height": 1790,
+        "dataSetters": {}
+      },
+      "type": "customGroup",
+      "width": 500,
+      "height": 1790,
+      "zIndex": 0,
+      "measured": {
+        "width": 500,
+        "height": 1790
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.abstract_data_sourcing.5b128e22-462e-4249-a00f-eb4f74f20f08",
+      "position": {
+        "x": 32,
+        "y": 80
+      },
+      "data": {
+        "type": "abstract_data_sourcing",
+        "name": "KPI Definitions and Audit Evidence",
+        "description": "Proposed source contract. Candidate inputs: metric catalog, owners, formulas, targets, periodic observations and audit evidence. Confirm actual systems, grain, access rules and update cadence before selecting connectors.",
+        "tags": [],
+        "icon": "data-connection",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.builder.6a00a486-6839-44af-bb11-43b59f5e50ea",
+      "position": {
+        "x": 32,
+        "y": 370
+      },
+      "data": {
+        "type": "builder",
+        "name": "Pipeline Builder | Standardize Inputs",
+        "description": "Proposed extension. Parse source tables, normalize identifiers, units and dates, and join reference mappings. Produce a clean staging layer; keep scoring rules in versioned code.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.repos.a0348468-c8ef-4061-8a89-213d84b801be",
+      "position": {
+        "x": 32,
+        "y": 660
+      },
+      "data": {
+        "type": "repos",
+        "name": "Code Repository | PySpark",
+        "description": "PySpark included in the original brief; repository design proposed. Validate observation grain; reject duplicate keys and invalid units. Prepare source-derived metric values, evidence completeness and historical datasets. Do not overwrite operational approvals.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.dataset.5faeb585-5362-4bf4-ad95-792f975c3c88",
+      "position": {
+        "x": 32,
+        "y": 950
+      },
+      "data": {
+        "type": "dataset",
+        "name": "Curated KPI and Evidence Datasets",
+        "description": "Proposed dataset model. Separate KPI definitions, observations and evidence. Example observation key: metric + entity + period + definition version. Preserve source timestamps, lineage and quality flags.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.53f41f28-d8a9-4195-bf10-8eafb72837ee",
+      "position": {
+        "x": 32,
+        "y": 1240
+      },
+      "data": {
+        "type": "custom",
+        "name": "Scheduler | Dependency-Aware Builds",
+        "description": "Scheduler included in the original brief; configuration proposed. Refresh source-derived datasets after ingestion completes. Schedule dependency-aware builds and inspect build success, not merely schedule initiation. Cadence is configurable.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.d98a297b-c671-4b0c-8d3a-886ccaf0c44b",
+      "position": {
+        "x": 32,
+        "y": 1530
+      },
+      "data": {
+        "type": "custom",
+        "name": "Data Quality and Freshness Gates",
+        "description": "Proposed extension. Check keys, required evidence, period coverage, units and freshness. Quarantine invalid records. Flag unavailable metrics explicitly; do not replace missing evidence with a passing score.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.b80a8dfe-3d6e-4aca-8bb9-f69f99ee90b4",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "position": {
+        "x": 32,
+        "y": 80
+      },
+      "data": {
+        "type": "object",
+        "name": "Ontology Manager | Metric Compass Model",
+        "description": "Ontology Manager included in the original brief; object schema proposed. Proposed types: KPI, KPIObservation, Assessment, CriterionResult, Evidence, ImprovementTask and Person. Link each assessment to a KPI, scoring version, reviewer and evidence.",
+        "tags": [],
+        "icon": "cube",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d2128d75-633a-4bc1-b2ed-eb6f9ca9fe5d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.object.0828b0a7-97fd-4004-941b-a226d7f1677a",
+      "position": {
+        "x": 32,
+        "y": 370
+      },
+      "data": {
+        "type": "object",
+        "name": "Assessment and Roadmap Objects",
+        "description": "Proposed extension. One Assessment per KPI, scope, review period and revision. Each CriterionResult references evidence. ImprovementTask links to the finding, owner, due date and dependency. Approved revisions remain historical.",
+        "tags": [],
+        "icon": "cube",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d2128d75-633a-4bc1-b2ed-eb6f9ca9fe5d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.a9330016-576f-45a9-bbce-1234700ee9f4",
+      "position": {
+        "x": 32,
+        "y": 660
+      },
+      "data": {
+        "type": "custom",
+        "name": "Action Types | Audit and Approval",
+        "description": "Proposed extension. CreateAssessment, SubmitEvidence, RecordCriterionResult, SubmitForReview, ApproveAssessment and PlanImprovement. Enforce roles, complete evidence and valid state transitions.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d2128d75-633a-4bc1-b2ed-eb6f9ca9fe5d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.repos.b2ed2f2d-db94-4d4c-9e26-4fdf6ede741f",
+      "position": {
+        "x": 32,
+        "y": 950
+      },
+      "data": {
+        "type": "repos",
+        "name": "Code Repository | TypeScript Functions",
+        "description": "TypeScript included in the original brief; function design proposed. Calculate audit scores deterministically using a versioned rubric. Function-backed approval freezes inputs, score, rubric version and reviewer. Share one rule set across preview and approval.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d2128d75-633a-4bc1-b2ed-eb6f9ca9fe5d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.object.555ab649-1f31-477f-b4be-a4485db774af",
+      "position": {
+        "x": 32,
+        "y": 1240
+      },
+      "data": {
+        "type": "object",
+        "name": "AI Recommendation Drafts",
+        "description": "Proposed extension. Store suggested findings and improvement tasks with evidence references, prompt/model version and review status. Keep AI suggestions distinct from approved assessments and accepted roadmap work.",
+        "tags": [],
+        "icon": "cube",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d2128d75-633a-4bc1-b2ed-eb6f9ca9fe5d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e",
+      "position": {
+        "x": 32,
+        "y": 80
+      },
+      "data": {
+        "type": "workshop",
+        "name": "Workshop | KPI Audit Workbench",
+        "description": "Workshop included in the original brief; module layout proposed. Review KPI portfolio, inspect evidence, enter criterion ratings and submit approvals. Embed relevant charts, roadmap, reports and chatbot; display freshness and approval status.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d68c6cac-fcc9-4d2f-8aa1-e0fba55f4659",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.265f05c0-bf1a-4b5c-a35d-c9bde632370a",
+      "position": {
+        "x": 32,
+        "y": 370
+      },
+      "data": {
+        "type": "custom",
+        "name": "Slate | Executive Portal",
+        "description": "Proposed extension. Provide a tailored landing page with portfolio context and navigation into Workshop and reports. Use the same authorized data and actions; do not duplicate scoring logic in the frontend.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d68c6cac-fcc9-4d2f-8aa1-e0fba55f4659",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.5f117973-a371-44c5-afdb-ba799328de73",
+      "position": {
+        "x": 32,
+        "y": 660
+      },
+      "data": {
+        "type": "custom",
+        "name": "Gantt Chart | Improvement Roadmap",
+        "description": "Proposed extension. Workshop timeline of ImprovementTask objects: start, due date, owner, status and dependencies. Use action forms for controlled date and ownership changes.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d68c6cac-fcc9-4d2f-8aa1-e0fba55f4659",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.quiver.3d0ba319-14c6-429c-9f97-6d8de77ffd5c",
+      "position": {
+        "x": 32,
+        "y": 950
+      },
+      "data": {
+        "type": "quiver",
+        "name": "Quiver | Score and Trend Analysis",
+        "description": "Proposed extension. Compare approved assessments by period and organization; examine criterion breakdowns and improvement progress. Separate audit maturity scores from actual business metric values.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d68c6cac-fcc9-4d2f-8aa1-e0fba55f4659",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.notepad.68e5c7f2-b0e5-4175-b7bd-98a9a90958a3",
+      "position": {
+        "x": 32,
+        "y": 1240
+      },
+      "data": {
+        "type": "notepad",
+        "name": "Notepad | Audit and Review Report",
+        "description": "Notepad included in the original brief; report template proposed. Template the approved assessment, evidence, score rationale and improvement roadmap. Record the assessment revision and as-of timestamp for reproducible review reports.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.d68c6cac-fcc9-4d2f-8aa1-e0fba55f4659",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.371d46d9-6a30-4f39-8f34-bccd897f6d54",
+      "position": {
+        "x": 32,
+        "y": 80
+      },
+      "data": {
+        "type": "custom",
+        "name": "AIP Chatbot | KPI Assistant",
+        "description": "Proposed extension. Curated Q&A over authorized KPI definitions, approved assessments and evidence. Explain score components and cite supporting objects. Ask for missing context; draft changes for review.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.ec2a1204-faaa-482b-965e-fc6f046eca4d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.aip_analyst.1fab1ca3-24a7-4ce0-b6ee-c5e5d43e0f5b",
+      "position": {
+        "x": 32,
+        "y": 370
+      },
+      "data": {
+        "type": "aip_analyst",
+        "name": "AIP Analyst | Portfolio Investigation",
+        "description": "Proposed extension. Ad-hoc questions such as which criteria contribute most to low audit scores. Analyze accessible object sets and inspect the analysis trace. Treat causal explanations as hypotheses.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.ec2a1204-faaa-482b-965e-fc6f046eca4d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.aip.8fe88cd8-5533-4f36-a38c-6037507e94ec",
+      "position": {
+        "x": 32,
+        "y": 660
+      },
+      "data": {
+        "type": "aip",
+        "name": "AIP Logic | Evidence Review",
+        "description": "Proposed extension. Use request-scoped evidence to draft gaps, summaries and improvement suggestions in a validated schema. Return draft content with evidence references; do not calculate or approve official scores.",
+        "tags": [],
+        "icon": "clean",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.ec2a1204-faaa-482b-965e-fc6f046eca4d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.aip.fae2fd8c-73e9-4120-9b2c-965c32d86d85",
+      "position": {
+        "x": 32,
+        "y": 950
+      },
+      "data": {
+        "type": "aip",
+        "name": "LLM | Approved Model Runtime",
+        "description": "Proposed extension. Selected platform-supported model powers Chatbot, Analyst and Logic. Configure model access, context limits and evaluations. Record versions for reproducibility; model availability is environment-specific.",
+        "tags": [],
+        "icon": "clean",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.ec2a1204-faaa-482b-965e-fc6f046eca4d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.c540885c-ab77-406c-a2ac-7fa814ace292",
+      "position": {
+        "x": 32,
+        "y": 1240
+      },
+      "data": {
+        "type": "custom",
+        "name": "Human Review | Accept AI Suggestions",
+        "description": "Proposed extension. Reviewer checks every suggested finding against evidence. Accepted findings become assessment inputs or improvement tasks via actions. Reject unsupported claims; retain review history.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.ec2a1204-faaa-482b-965e-fc6f046eca4d",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.903ca11d-9398-4dd1-a2cd-fe697417b735",
+      "position": {
+        "x": 32,
+        "y": 80
+      },
+      "data": {
+        "type": "custom",
+        "name": "Automate | Review and Follow-Up",
+        "description": "Proposed extension. Monitor overdue assessments or improvement tasks. Notify owners, invoke AIP Logic on eligible evidence, and produce periodic Notepad digests. Use deduplication keys and scoped execution identity.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.a781cdf7-7291-49ae-990c-79c189152cda",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.63241a58-3881-43c0-b9ca-8f39f3d49e90",
+      "position": {
+        "x": 32,
+        "y": 370
+      },
+      "data": {
+        "type": "custom",
+        "name": "Audit Lifecycle",
+        "description": "Proposed extension. Draft -> Evidence collection -> Scored -> Review -> Approved -> Improvement tracking -> Reassessment. Returned reviews go back for correction. Changed evidence creates a new assessment revision.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.a781cdf7-7291-49ae-990c-79c189152cda",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.user_group.d1485d2a-2fc1-480b-958f-6025cb8fa01f",
+      "position": {
+        "x": 32,
+        "y": 660
+      },
+      "data": {
+        "type": "user_group",
+        "name": "KPI Owners / Auditors / Managers",
+        "description": "Proposed extension. Owners supply evidence; auditors assess criteria; designated reviewers approve; managers prioritize improvement work. Configure object visibility and action rights for each role.",
+        "tags": [],
+        "icon": "user",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.a781cdf7-7291-49ae-990c-79c189152cda",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    },
+    {
+      "id": "ri.solution-design.main.node.custom.326cb031-2716-4d0d-a1a6-79ad1cf15a91",
+      "position": {
+        "x": 32,
+        "y": 950
+      },
+      "data": {
+        "type": "custom",
+        "name": "Health Checks and Delivery Controls",
+        "description": "Proposed extension. Monitor pipeline failures, freshness, function errors and automation effects. Test scoring edge cases and access policies; evaluate AI grounding before release. Use isolated development and controlled promotion.",
+        "tags": [],
+        "icon": "annotation",
+        "attributeGroups": [],
+        "width": 436,
+        "height": 220,
+        "dataSetters": {}
+      },
+      "type": "foundryComponent",
+      "width": 436,
+      "height": 220,
+      "parentId": "ri.solution-design.main.node.group.a781cdf7-7291-49ae-990c-79c189152cda",
+      "zIndex": 1,
+      "measured": {
+        "width": 436,
+        "height": 220
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "ri.solution-design.main.edge.standard.d6456e59-938a-4bf0-9711-b6a2a6f07f1e",
+      "zIndex": 1,
+      "data": {
+        "label": "Source data",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.abstract_data_sourcing.5b128e22-462e-4249-a00f-eb4f74f20f08",
+      "target": "ri.solution-design.main.node.builder.6a00a486-6839-44af-bb11-43b59f5e50ea"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.454e8ddd-16ee-444d-9aeb-705c6143089d",
+      "zIndex": 1,
+      "data": {
+        "label": "Standardized staging",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.builder.6a00a486-6839-44af-bb11-43b59f5e50ea",
+      "target": "ri.solution-design.main.node.repos.a0348468-c8ef-4061-8a89-213d84b801be"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.cd335dbc-7af1-40ba-9163-cd6479ea0443",
+      "zIndex": 1,
+      "data": {
+        "label": "Validated outputs",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.repos.a0348468-c8ef-4061-8a89-213d84b801be",
+      "target": "ri.solution-design.main.node.dataset.5faeb585-5362-4bf4-ad95-792f975c3c88"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.1f9f87f9-d72e-4cf0-b835-bdfd86d19f99",
+      "zIndex": 1,
+      "data": {
+        "label": "Build targets and upstream dependencies",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.53f41f28-d8a9-4195-bf10-8eafb72837ee",
+      "target": "ri.solution-design.main.node.dataset.5faeb585-5362-4bf4-ad95-792f975c3c88"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.b3d8d869-3b48-4844-9243-d55e71d0453c",
+      "zIndex": 1,
+      "data": {
+        "label": "Quality checks",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.dataset.5faeb585-5362-4bf4-ad95-792f975c3c88",
+      "target": "ri.solution-design.main.node.custom.d98a297b-c671-4b0c-8d3a-886ccaf0c44b"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.0fb10e0d-0628-4da6-b200-60768da0c5bd",
+      "zIndex": 1,
+      "data": {
+        "label": "Backing data and links",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.dataset.5faeb585-5362-4bf4-ad95-792f975c3c88",
+      "target": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.bc270989-2356-49d8-bd17-2f8fcc7eb30c",
+      "zIndex": 1,
+      "data": {
+        "label": "Failed checks / stale data",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.d98a297b-c671-4b0c-8d3a-886ccaf0c44b",
+      "target": "ri.solution-design.main.node.custom.326cb031-2716-4d0d-a1a6-79ad1cf15a91"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.06eb1cd8-5604-4247-88ec-b98f44543a4c",
+      "zIndex": 1,
+      "data": {
+        "label": "Defines relationships",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.object.0828b0a7-97fd-4004-941b-a226d7f1677a"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.9170f7b9-2f08-4014-a5f5-6e7528e2def3",
+      "zIndex": 1,
+      "data": {
+        "label": "Authorized objects",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.ec49bd15-93c7-4b10-a36a-4f8b4063c6ee",
+      "zIndex": 1,
+      "data": {
+        "label": "Submit changes",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e",
+      "target": "ri.solution-design.main.node.custom.a9330016-576f-45a9-bbce-1234700ee9f4"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.f13e4875-2219-4f60-a2b3-16a94bbfac6b",
+      "zIndex": 1,
+      "data": {
+        "label": "Function-backed rules",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.a9330016-576f-45a9-bbce-1234700ee9f4",
+      "target": "ri.solution-design.main.node.repos.b2ed2f2d-db94-4d4c-9e26-4fdf6ede741f"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.612c2027-ab45-405a-abfa-92ec808eb890",
+      "zIndex": 1,
+      "data": {
+        "label": "Validated edits and score snapshots",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.repos.b2ed2f2d-db94-4d4c-9e26-4fdf6ede741f",
+      "target": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.aa059fcb-52c3-4ffd-a9bd-8ad2434942bc",
+      "zIndex": 1,
+      "data": {
+        "label": "Navigate to workbench",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.265f05c0-bf1a-4b5c-a35d-c9bde632370a",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.5921daf0-15da-427d-8be0-25cccbbd5fd5",
+      "zIndex": 1,
+      "data": {
+        "label": "Improvement tasks",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.custom.5f117973-a371-44c5-afdb-ba799328de73"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.50149426-7e20-40f6-8703-ece36a5762eb",
+      "zIndex": 1,
+      "data": {
+        "label": "Embedded roadmap",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.5f117973-a371-44c5-afdb-ba799328de73",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.06262a7c-6bc2-42a9-8d55-bb5cd3885c1c",
+      "zIndex": 1,
+      "data": {
+        "label": "Approved assessment objects",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.quiver.3d0ba319-14c6-429c-9f97-6d8de77ffd5c"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.f6fb6a5b-cbb3-4758-8f8d-0dea5042e77a",
+      "zIndex": 1,
+      "data": {
+        "label": "Embedded analysis",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.quiver.3d0ba319-14c6-429c-9f97-6d8de77ffd5c",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.b6d0baff-afb3-4707-866b-ce183db20f86",
+      "zIndex": 1,
+      "data": {
+        "label": "Charts",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.quiver.3d0ba319-14c6-429c-9f97-6d8de77ffd5c",
+      "target": "ri.solution-design.main.node.notepad.68e5c7f2-b0e5-4175-b7bd-98a9a90958a3"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.5b4c4dfd-b081-459b-92e1-f922eae6a160",
+      "zIndex": 1,
+      "data": {
+        "label": "Approved assessment context",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.notepad.68e5c7f2-b0e5-4175-b7bd-98a9a90958a3"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.8d4fd7a6-fa3f-47c2-ba83-e487fe9012a2",
+      "zIndex": 1,
+      "data": {
+        "label": "Authorized retrieval tools",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.custom.371d46d9-6a30-4f39-8f34-bccd897f6d54"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.daa31735-7ae9-4ad1-8069-708e60b7cda9",
+      "zIndex": 1,
+      "data": {
+        "label": "Authorized object analysis",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.aip_analyst.1fab1ca3-24a7-4ce0-b6ee-c5e5d43e0f5b"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.41766327-47ce-49dd-85b7-e3420a39c3a7",
+      "zIndex": 1,
+      "data": {
+        "label": "Assessment and evidence context",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.aip.8fe88cd8-5533-4f36-a38c-6037507e94ec"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.6ff1e65f-6f7a-4d8b-bb58-534ad50f53f3",
+      "zIndex": 1,
+      "data": {
+        "label": "Model runtime",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.aip.fae2fd8c-73e9-4120-9b2c-965c32d86d85",
+      "target": "ri.solution-design.main.node.custom.371d46d9-6a30-4f39-8f34-bccd897f6d54"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.c56dbedb-d410-487d-8ff0-eed2362a2969",
+      "zIndex": 1,
+      "data": {
+        "label": "Model runtime",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.aip.fae2fd8c-73e9-4120-9b2c-965c32d86d85",
+      "target": "ri.solution-design.main.node.aip_analyst.1fab1ca3-24a7-4ce0-b6ee-c5e5d43e0f5b"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.6d318d7a-d0dd-47ed-b667-d21f9b9ccd9b",
+      "zIndex": 1,
+      "data": {
+        "label": "Model runtime",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.aip.fae2fd8c-73e9-4120-9b2c-965c32d86d85",
+      "target": "ri.solution-design.main.node.aip.8fe88cd8-5533-4f36-a38c-6037507e94ec"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.5e15af88-3f1f-4d61-bbb1-3d1e84cdbb6c",
+      "zIndex": 1,
+      "data": {
+        "label": "Chat interface",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.371d46d9-6a30-4f39-8f34-bccd897f6d54",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.73aac046-d3b5-4ce9-8b97-80cdc49dd5c1",
+      "zIndex": 1,
+      "data": {
+        "label": "Analysis interface",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.aip_analyst.1fab1ca3-24a7-4ce0-b6ee-c5e5d43e0f5b",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.719c655b-e46e-4b1b-98b8-0fa66bb19f25",
+      "zIndex": 1,
+      "data": {
+        "label": "Draft output via configured edits",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.aip.8fe88cd8-5533-4f36-a38c-6037507e94ec",
+      "target": "ri.solution-design.main.node.object.555ab649-1f31-477f-b4be-a4485db774af"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.0e64dc65-ffb4-4a7f-92cd-d703ffe98037",
+      "zIndex": 1,
+      "data": {
+        "label": "Review queue",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.555ab649-1f31-477f-b4be-a4485db774af",
+      "target": "ri.solution-design.main.node.custom.c540885c-ab77-406c-a2ac-7fa814ace292"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.824b78ba-76a4-4fde-9fa7-d0ed395345ed",
+      "zIndex": 1,
+      "data": {
+        "label": "Accept / reject with authorization",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.c540885c-ab77-406c-a2ac-7fa814ace292",
+      "target": "ri.solution-design.main.node.custom.a9330016-576f-45a9-bbce-1234700ee9f4"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.646ac021-5275-41ab-b636-cbf51fb46c9b",
+      "zIndex": 1,
+      "data": {
+        "label": "Eligible object conditions",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.object.0ac83cea-611d-4346-9641-0753af10b75e",
+      "target": "ri.solution-design.main.node.custom.903ca11d-9398-4dd1-a2cd-fe697417b735"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.2872e0ee-100b-4550-be54-95f6a8c335b3",
+      "zIndex": 1,
+      "data": {
+        "label": "Invoke evidence review",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.903ca11d-9398-4dd1-a2cd-fe697417b735",
+      "target": "ri.solution-design.main.node.aip.8fe88cd8-5533-4f36-a38c-6037507e94ec"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.4e6de787-bf50-49de-af96-4eb88da63c94",
+      "zIndex": 1,
+      "data": {
+        "label": "Scoped notifications",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.903ca11d-9398-4dd1-a2cd-fe697417b735",
+      "target": "ri.solution-design.main.node.user_group.d1485d2a-2fc1-480b-958f-6025cb8fa01f"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.11c65bab-7c24-475d-ab7a-876f44a6c963",
+      "zIndex": 1,
+      "data": {
+        "label": "Report template for digest",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.notepad.68e5c7f2-b0e5-4175-b7bd-98a9a90958a3",
+      "target": "ri.solution-design.main.node.custom.903ca11d-9398-4dd1-a2cd-fe697417b735"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.b24491ba-d51e-4d98-8da5-b48daf414919",
+      "zIndex": 1,
+      "data": {
+        "label": "Use workbench",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.user_group.d1485d2a-2fc1-480b-958f-6025cb8fa01f",
+      "target": "ri.solution-design.main.node.workshop.3b8a8453-5252-45be-ab1b-4e3fe7997c9e"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.4146d824-0aeb-4be6-95d2-6ef1dd8c56d5",
+      "zIndex": 1,
+      "data": {
+        "label": "Enforce lifecycle",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.a9330016-576f-45a9-bbce-1234700ee9f4",
+      "target": "ri.solution-design.main.node.custom.63241a58-3881-43c0-b9ca-8f39f3d49e90"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.b9cd9fbd-1295-45db-b75e-3dd695c41c33",
+      "zIndex": 1,
+      "data": {
+        "label": "Effect success / failures",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.903ca11d-9398-4dd1-a2cd-fe697417b735",
+      "target": "ri.solution-design.main.node.custom.326cb031-2716-4d0d-a1a6-79ad1cf15a91"
+    },
+    {
+      "id": "ri.solution-design.main.edge.standard.9c5b9443-f8b0-4e27-9ee7-82da27c60f86",
+      "zIndex": 1,
+      "data": {
+        "label": "Build status",
+        "edgeSetters": {}
+      },
+      "source": "ri.solution-design.main.node.custom.53f41f28-d8a9-4195-bf10-8eafb72837ee",
+      "target": "ri.solution-design.main.node.custom.326cb031-2716-4d0d-a1a6-79ad1cf15a91"
+    }
+  ]
+}
