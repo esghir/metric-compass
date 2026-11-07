@@ -43,6 +43,8 @@ KPI owners provide evidence, auditors rate criteria, reviewers approve assessmen
 
 ## End-to-end workflow
 
+![Metric Compass KPI audit workflow diagram](docs/diagrams/workflow.svg)
+
 ```mermaid
 flowchart TD
     D["Curated KPI and evidence data"] --> O["KPI and assessment ontology"]
@@ -77,6 +79,7 @@ A fictional service team reviews an on-time-delivery KPI. Its operational value 
 | Path | Contents |
 | --- | --- |
 | `docs/diagrams/solution-design.json` | Editable Solution Designer diagram |
+| `docs/diagrams/workflow.svg` | KPI evidence, assessment and approval workflow picture |
 | `docs/architecture.md` | Layers, component roles and engineering decisions |
 | `docs/ontology.md` | Object grains, links, keys and data ownership |
 | `docs/workflows.md` | States, actions, calculations and completion rules |
@@ -94,6 +97,28 @@ Importing the JSON draws the solution architecture; it does not create Foundry r
 ## Technology coverage
 
 Ontology Manager, Workshop, Slate, Action Types, PySpark, TypeScript, Code Repositories, Pipeline Builder, Scheduler, Automate, Quiver, Notepad, Gantt Chart, AIP Chatbot, AIP Analyst, AIP Logic and LLMs.
+
+## Foundry tools and their roles
+
+These are proposed components in the conceptual design; they are not claims that a production Foundry environment has already been configured.
+
+| Tool | Role in Metric Compass |
+| --- | --- |
+| Ontology Manager | Model KPI definitions, observations, assessments, criteria, evidence, reviewers and improvement tasks. |
+| Pipeline Builder | Standardize KPI inputs and validate units, reporting periods, keys and evidence freshness. |
+| Code Repository (PySpark / TypeScript) | Version source transformations and deterministic scoring functions. |
+| Scheduler | Refresh source-derived observations and downstream score or trend datasets. |
+| Action Types | Submit evidence, record criterion ratings, return or approve assessments and plan improvements. |
+| Workshop | Provide the KPI audit workbench for owners, auditors and reviewers. |
+| Slate | Deliver a focused portfolio landing page when a custom interface is useful. |
+| Gantt chart | Plan and track approved improvement tasks, owners, dates and dependencies. |
+| Quiver | Compare approved scores, evidence completeness and improvement trends across periods. |
+| Notepad | Produce versioned audit and review reports with rationale and evidence references. |
+| AIP Chatbot | Answer grounded questions about authorized KPI definitions and assessment records. |
+| AIP Analyst | Explore portfolio patterns and evidence gaps without approving scores. |
+| AIP Logic | Draft evidence-gap summaries and improvement suggestions for human review. |
+| LLM | Provide the approved model runtime behind AIP features; outputs require grounding and evaluation. |
+| Automate | Notify owners about overdue reviews and approved improvement tasks; log effects. |
 
 ## Contributing
 
