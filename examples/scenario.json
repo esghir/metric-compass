@@ -1,0 +1,68 @@
+{
+  "synthetic": true,
+  "scenario": "Illustrative KPI audit; all IDs, organizations, dates and values are fictional.",
+  "kpi": {
+    "id": "KPI-DEMO-001",
+    "name": "On-time delivery",
+    "definition_version": 1,
+    "unit": "percent",
+    "target_value": 95
+  },
+  "observation": {
+    "id": "OBS-DEMO-001",
+    "kpi_id": "KPI-DEMO-001",
+    "scope": "Demo service team",
+    "period": "2030-01",
+    "value": 92
+  },
+  "assessment": {
+    "id": "ASSESS-DEMO-001",
+    "kpi_id": "KPI-DEMO-001",
+    "revision": 1,
+    "status": "Review",
+    "rubric_version": "demo-v1",
+    "mandatory_evidence_complete": true
+  },
+  "evidence": [
+    {
+      "id": "EVIDENCE-DEMO-001",
+      "description": "Fictional metric definition and timestamped aggregate"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "DEFINITION",
+      "rating": 90,
+      "weight": 0.3,
+      "evidence_ids": [
+        "EVIDENCE-DEMO-001"
+      ]
+    },
+    {
+      "id": "EVIDENCE",
+      "rating": 80,
+      "weight": 0.3,
+      "evidence_ids": [
+        "EVIDENCE-DEMO-001"
+      ]
+    },
+    {
+      "id": "FRESHNESS",
+      "rating": 70,
+      "weight": 0.2,
+      "evidence_ids": [
+        "EVIDENCE-DEMO-001"
+      ]
+    },
+    {
+      "id": "OWNERSHIP",
+      "rating": 100,
+      "weight": 0.2,
+      "evidence_ids": [
+        "EVIDENCE-DEMO-001"
+      ]
+    }
+  ],
+  "expected_audit_score": 85.0,
+  "approval_record": null
+}
