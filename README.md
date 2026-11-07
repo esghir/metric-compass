@@ -12,6 +12,12 @@ KPI reviews become difficult to trust when definitions, evidence, ratings and im
 
 ## Solution design
 
+**Original Solution Designer export:**
+
+[![Open the full-size Metric Compass Solution Designer diagram](docs/diagrams/solution-design.png)](docs/diagrams/solution-design.png)
+
+This detailed diagram is the proposed Foundry solution design. It groups the design into five areas: KPI definitions and data orchestration; ontology and controlled changes; applications and reporting; AIP and human review; workflow and operations. The linked PNG is 2048 × 1299 pixels. Its resolution is suitable for a portfolio, but the diagram is dense: small labels are hard to read in the README preview. Click the image to open it at full size and zoom in. The companion [workflow.svg](docs/diagrams/workflow.svg) presents the KPI assessment lifecycle in a simpler, more readable view.
+
 ```mermaid
 flowchart TD
     U["KPI owners · auditors · reviewers · managers"] --> S["Source KPI definitions · observations · evidence"]
@@ -26,7 +32,7 @@ flowchart TD
     M --> O
 ```
 
-The editable [Solution Designer JSON](docs/diagrams/solution-design.json) accompanies the architecture and can be imported into the matching tool. See [the component and data flow details](docs/architecture.md).
+The editable [Solution Designer JSON](docs/diagrams/solution-design.json) accompanies the diagram and can be imported into a compatible Solution Designer. Importing the JSON draws the design; it does not provision Foundry resources. See [the component and data flow details](docs/architecture.md).
 
 ## What the design covers
 
@@ -79,7 +85,8 @@ A fictional service team reviews an on-time-delivery KPI. Its operational value 
 | Path | Contents |
 | --- | --- |
 | `docs/diagrams/solution-design.json` | Editable Solution Designer diagram |
-| `docs/diagrams/workflow.svg` | KPI evidence, assessment and approval workflow picture |
+| `docs/diagrams/solution-design.png` | Original detailed Solution Designer diagram |
+| `docs/diagrams/workflow.svg` | Readable companion KPI evidence and approval workflow graphic |
 | `docs/architecture.md` | Layers, component roles and engineering decisions |
 | `docs/ontology.md` | Object grains, links, keys and data ownership |
 | `docs/workflows.md` | States, actions, calculations and completion rules |
